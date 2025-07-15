@@ -17,12 +17,12 @@
             --transition: all 0.3s ease;
 
             /* 作品类型颜色 */
-            --novel-color: #e74c3c;
-            --anime-color: #3498db;
-            --game-color: #2ecc71;
-            --comic-color: #f39c12;
-            --movie-color: #9b59b6;
-            --other-color: #7f8c8d;
+            --novel-color: #e64e4e;
+            --anime-color: #f79743;
+            --game-color: #82c6fa;
+            --video-color: #79e671;
+            --book-color: #f6f073;
+            --daily-color: #aa67ed;
         }
 
         * {
@@ -283,16 +283,16 @@
             background: var(--game-color);
         }
 
-        .legend-comic {
-            background: var(--comic-color);
+        .legend-video {
+            background: var(--video-color);
         }
 
-        .legend-movie {
-            background: var(--movie-color);
+        .legend-book {
+            background: var(--book-color);
         }
 
-        .legend-other {
-            background: var(--other-color);
+        .legend-daily {
+            background: var(--daily-color);
         }
 
         .instructions {
@@ -397,12 +397,16 @@
                 <span>游戏</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color legend-comic"></div>
-                <span>漫画</span>
+                <div class="legend-color legend-video"></div>
+                <span>影视</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color legend-movie"></div>
-                <span>电影</span>
+                <div class="legend-color legend-book"></div>
+                <span>书籍</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-daily"></div>
+                <span>日常</span>
             </div>
         </div>
 
@@ -415,9 +419,9 @@
             'novel': 'var(--novel-color)',
             'anime': 'var(--anime-color)',
             'game': 'var(--game-color)',
-            'comic': 'var(--comic-color)',
-            'movie': 'var(--movie-color)',
-            'other': 'var(--other-color)'
+            'video': 'var(--video-color)',
+            'book': 'var(--book-color)',
+            'daily': 'var(--daily-color)'
         };
 
         // 从外部加载数据
@@ -561,11 +565,9 @@
                 'novel': '小说',
                 'anime': '动漫',
                 'game': '游戏',
-                'movie': '电影',
+                'video': '电影',
                 'book': '书籍',
                 'daily': '日常',
-                'other': '其他',
-                'comic': '漫画',
             };
             return typeNames[type] || '未知类型';
         }

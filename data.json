@@ -1,38 +1,44 @@
 {
   "works": [
-    {"id": "w1", "title": "三体（小说）", "type": "novel", "required": true},
-    {"id": "w2", "title": "深入理解计算机系统", "type": "other", "required": true},
-    {"id": "w3", "title": "塞尔达传说：旷野之息", "type": "game", "required": true},
-    {"id": "w4", "title": "进击的巨人", "type": "anime", "required": false},
-    {"id": "w5", "title": "Node.js实战", "type": "other", "required": false},
-    {"id": "w6", "title": "海贼王", "type": "comic", "required": false},
-    {"id": "w7", "title": "肖申克的救赎", "type": "movie", "required": false},
-    {"id": "w8", "title": "JavaScript高级程序设计", "type": "other", "required": false},
-    {"id": "w9", "title": "冰与火之歌", "type": "novel", "required": false},
-    {"id": "w10", "title": "巫师3：狂猎", "type": "game", "required": false},
-    {"id": "w11", "title": "你的名字", "type": "anime", "required": false},
-    {"id": "w12", "title": "黑暗骑士", "type": "movie", "required": false}
+    {"id": "3body", "title": "三体", "type": "novel", "required": true},
+    {"id": "guimi", "title": "诡秘之主", "type": "novel", "required": true},
+    {"id": "hp", "title": "哈利·波特", "type": "novel", "required": false},
+    {"id": "4lie", "title": "四月是你的谎言", "type": "anime", "required": false},
+    {"id": "madoka", "title": "魔法少女小圆", "type": "anime", "required": true},
+    {"id": "bg3", "title": "博德之门3", "type": "game", "required": true},
+    {"id": "persona", "title": "女神异闻录5", "type": "game", "required": false},
+    {"id": "tiandao", "title": "天道", "type": "video", "required": true},
+    {"id": "father", "title": "教父", "type": "video", "required": false},
+    {"id": "hero", "title": "英雄之旅", "type": "book", "required": true},
+    {"id": "cause", "title": "因果论", "type": "book", "required": false},
+    {"id": "run", "title": "跑步", "type": "daily", "required": true}
   ],
   "paths": [
-    {"id": "p1", "title": "科幻文学路径"},
-    {"id": "p2", "title": "前端开发路径"},
-    {"id": "p3", "title": "游戏设计路径"},
-    {"id": "p4", "title": "日本动漫路径"}
+    {"id": "p1", "title": "游戏鉴赏家"},
+    {"id": "p2", "title": "琴师"},
+    {"id": "p3", "title": "工程师"},
+    {"id": "p4", "title": "提问官"},
+    {"id": "p5", "title": "AI心理师"},
+    {"id": "p6", "title": "小说家"},
+    {"id": "p7", "title": "运动博主"},
+    {"id": "p8", "title": "具身游戏大师"},
+    {"id": "p9", "title": "TRPG冒险家"},
+    {"id": "p10", "title": "历史学家"},
+    {"id": "p11", "title": "医生"},
+    {"id": "p12", "title": "学习家"},
+    {"id": "p13", "title": "自由厨师"},
+    {"id": "p14", "title": "动漫鉴赏家"},
+    {"id": "p15", "title": "书画家"},
+    {"id": "p16", "title": "人力资源管理"}
   ],
   "connections": [
-    {"from": "p1", "to": "w1"},
-    {"from": "p1", "to": "w9"},
+    {"from": "p1", "to": "hp"},
+    {"from": "p1", "to": "persona"},
     
-    {"from": "p2", "to": "w2"},
-    {"from": "p2", "to": "w5"},
-    {"from": "p2", "to": "w8"},
-    
-    {"from": "p3", "to": "w3"},
-    {"from": "p3", "to": "w10"},
-    
-    {"from": "p4", "to": "w4"},
-    {"from": "p4", "to": "w6"},
-    {"from": "p4", "to": "w11"},
-    {"from": "p4", "to": "w7"}
+    {"from": "p2", "to": "persona"},
+    {"from": "p2", "to": "4lie"},
+
+    {"from": "p3", "to": "cause"},
+    {"from": "p3", "to": "father"}
   ]
 }
