@@ -577,8 +577,9 @@
             const cards = document.querySelectorAll('.card');
 
             cards.forEach(card => {
-                card.addEventListener('mouseenter', handleCardHover);
-                card.addEventListener('mouseleave', clearHighlights);
+                // card.addEventListener('mouseenter', handleCardHover);
+                // card.addEventListener('mouseleave', clearHighlights);
+                card.addEventListener('click', handleCardHover);
             });
         }
 
