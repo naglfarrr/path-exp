@@ -81,7 +81,7 @@
     {"id": "b5", "title": "色彩之书", "type": "book", "required": false},
     {"id": "b6", "title": "认知神经科学", "type": "book", "required": false},
     {"id": "b7", "title": "西方美术史", "type": "book", "required": false},
-    {"id": "b8", "title": "表现与本质", "type": "book", "required": false},
+    {"id": "b8", "title": "表象与本质", "type": "book", "required": false},
     {"id": "b9", "title": "超限战", "type": "book", "required": false},
     {"id": "b10", "title": "德鲁克系列", "type": "book", "required": false},
     {"id": "b11", "title": "控制论/系统论", "type": "book", "required": false},
