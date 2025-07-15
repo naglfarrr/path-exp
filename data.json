@@ -1,17 +1,46 @@
 {
   "works": [
-    {"id": "3body", "title": "三体", "type": "novel", "required": true},
-    {"id": "guimi", "title": "诡秘之主", "type": "novel", "required": true},
-    {"id": "hp", "title": "哈利·波特", "type": "novel", "required": false},
-    {"id": "4lie", "title": "四月是你的谎言", "type": "anime", "required": false},
-    {"id": "madoka", "title": "魔法少女小圆", "type": "anime", "required": true},
-    {"id": "bg3", "title": "博德之门3", "type": "game", "required": true},
-    {"id": "persona", "title": "女神异闻录5", "type": "game", "required": false},
-    {"id": "tiandao", "title": "天道", "type": "video", "required": true},
-    {"id": "father", "title": "教父", "type": "video", "required": false},
-    {"id": "hero", "title": "英雄之旅", "type": "book", "required": true},
-    {"id": "cause", "title": "因果论", "type": "book", "required": false},
-    {"id": "run", "title": "跑步", "type": "daily", "required": true}
+    {"id": "t1", "title": "三体", "type": "novel", "required": true},
+    {"id": "t2", "title": "诡秘之主", "type": "novel", "required": true},
+
+    {"id": "t3", "title": "攻壳机动队", "type": "anime", "required": true},
+    {"id": "t4", "title": "魔法少女小圆", "type": "anime", "required": true},
+    {"id": "t5", "title": "记忆缝线", "type": "anime", "required": true},
+    {"id": "t6", "title": "哆啦A梦", "type": "anime", "required": true},
+    {"id": "t7", "title": "心理测量者", "type": "anime", "required": true},
+
+    {"id": "t8", "title": "马里奥疯兔", "type": "game", "required": true},
+    {"id": "t9", "title": "博德之门3", "type": "game", "required": true},
+    {"id": "t10", "title": "模拟人生", "type": "game", "required": true},
+    {"id": "t11", "title": "我的世界", "type": "game", "required": true},
+
+    {"id": "n1", "title": "豆豆三部曲", "type": "novel", "required": false},
+    {"id": "n2", "title": "进击的学霸", "type": "novel", "required": false},
+    {"id": "n3", "title": "无限恐怖", "type": "novel", "required": false},
+    {"id": "n4", "title": "基地系列", "type": "novel", "required": false},
+    {"id": "n5", "title": "福尔摩斯探案集", "type": "novel", "required": false},
+    {"id": "n6", "title": "赡养人类", "type": "novel", "required": false},
+    {"id": "n7", "title": "地球纪元", "type": "novel", "required": false},
+    {"id": "n8", "title": "金庸系列", "type": "novel", "required": false},
+    {"id": "n9", "title": "阿加莎系列", "type": "novel", "required": false},
+
+    {"id": "a1", "title": "四月是你的谎言", "type": "anime", "required": false},
+    {"id": "a2", "title": "全职猎人", "type": "anime", "required": false},
+    {"id": "a3", "title": "游戏王", "type": "anime", "required": false},
+    {"id": "a4", "title": "少女手工", "type": "anime", "required": false},
+    {"id": "a5", "title": "火凤燎原", "type": "anime", "required": false},
+    {"id": "a6", "title": "摇曳露营", "type": "anime", "required": false},
+    {"id": "a7", "title": "歌愈少女", "type": "anime", "required": false},
+    {"id": "a8", "title": "放学后桌游俱乐部", "type": "anime", "required": false},
+    {"id": "a9", "title": "卡罗尔与星期二", "type": "anime", "required": false},
+
+    {"id": "g1", "title": "黑暗之魂", "type": "game", "required": false},
+
+    {"id": "v1", "title": "繁花", "type": "video", "required": false},
+
+    {"id": "b1", "title": "游戏的力量", "type": "book", "required": false},
+
+    {"id": "d1", "title": "舞蹈", "type": "daily", "required": false}
   ],
   "paths": [
     {"id": "p1", "title": "游戏鉴赏家"},
@@ -32,13 +61,22 @@
     {"id": "p16", "title": "人力资源管理"}
   ],
   "connections": [
-    {"from": "p1", "to": "hp"},
-    {"from": "p1", "to": "persona"},
+    {"from": "p1", "to": "n3"},
+    {"from": "p1", "to": "n8"},
+    {"from": "p1", "to": "a2"},
+    {"from": "p1", "to": "a3"},
+    {"from": "p1", "to": "a8"},
+    {"from": "p1", "to": "g1"},
+    {"from": "p1", "to": "b1"},
     
-    {"from": "p2", "to": "persona"},
-    {"from": "p2", "to": "4lie"},
+    {"from": "p2", "to": "a1"},
+    {"from": "p1", "to": "a6"},
+    {"from": "p2", "to": "a7"},
+    {"from": "p2", "to": "a9"},
+    {"from": "p1", "to": "d1"},
 
-    {"from": "p3", "to": "cause"},
-    {"from": "p3", "to": "father"}
+    {"from": "p3", "to": "n1"},
+    {"from": "p3", "to": "a4"},
+    {"from": "p3", "to": "a6"}
   ]
 }
