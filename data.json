@@ -1,0 +1,38 @@
+{
+  "works": [
+    {"id": "w1", "title": "三体（小说）", "type": "novel", "required": true},
+    {"id": "w2", "title": "深入理解计算机系统", "type": "other", "required": true},
+    {"id": "w3", "title": "塞尔达传说：旷野之息", "type": "game", "required": true},
+    {"id": "w4", "title": "进击的巨人", "type": "anime", "required": false},
+    {"id": "w5", "title": "Node.js实战", "type": "other", "required": false},
+    {"id": "w6", "title": "海贼王", "type": "comic", "required": false},
+    {"id": "w7", "title": "肖申克的救赎", "type": "movie", "required": false},
+    {"id": "w8", "title": "JavaScript高级程序设计", "type": "other", "required": false},
+    {"id": "w9", "title": "冰与火之歌", "type": "novel", "required": false},
+    {"id": "w10", "title": "巫师3：狂猎", "type": "game", "required": false},
+    {"id": "w11", "title": "你的名字", "type": "anime", "required": false},
+    {"id": "w12", "title": "黑暗骑士", "type": "movie", "required": false}
+  ],
+  "paths": [
+    {"id": "p1", "title": "科幻文学路径"},
+    {"id": "p2", "title": "前端开发路径"},
+    {"id": "p3", "title": "游戏设计路径"},
+    {"id": "p4", "title": "日本动漫路径"}
+  ],
+  "connections": [
+    {"from": "p1", "to": "w1"},
+    {"from": "p1", "to": "w9"},
+    
+    {"from": "p2", "to": "w2"},
+    {"from": "p2", "to": "w5"},
+    {"from": "p2", "to": "w8"},
+    
+    {"from": "p3", "to": "w3"},
+    {"from": "p3", "to": "w10"},
+    
+    {"from": "p4", "to": "w4"},
+    {"from": "p4", "to": "w6"},
+    {"from": "p4", "to": "w11"},
+    {"from": "p4", "to": "w7"}
+  ]
+}
